@@ -1,1 +1,0 @@
-https://BromBom.github.io/rsschool-cv/cv
