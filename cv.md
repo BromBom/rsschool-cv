@@ -24,12 +24,12 @@ At the moment, I want to become a good programmer, a professional in my field. I
 ---
 ## My code
 ---
-```var d = new Date();<br>
-var time = d.getHours();<br>
-if (time &lt; 8) <br>
-  {<br>
-  document.write("<b>Wake up and sing!</b>");<br>
-  }<br>
+```var d = new Date();
+var time = d.getHours();
+if (time &lt; 8)
+  {
+  document.write("<b>Wake up and sing!</b>");
+  }
 ```
 ---
 ## Experience
