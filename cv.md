@@ -1,14 +1,14 @@
-![foto](1.jpg)
+![foto](https://sun9-60.userapi.com/impg/c858420/v858420746/1487e0/HTog9vWpij8.jpg?size=736x660&quality=96&sign=4192f384970ac7cad847e8f8aea2cf88&type=album)
 # Ihor Levachkov 
 ---
 ---
 ## Contacs
+* Belarus, Mink
 * +375297721893
 * pokerlis@gmail.com
 ---
 ## About Me
 At the moment, I want to become a good programmer, a professional in my field. I persistently study the basics of programming and strive to improve my skills and horizons. I compensate for the lack of programming experience with perseverance and a technical mindset.
-> "Yporstvo i trud..."
 ---
 ## Skills
 * Programming languages (basics)
@@ -24,31 +24,12 @@ At the moment, I want to become a good programmer, a professional in my field. I
 ---
 ## My code
 ---
-```<!doctype HTML>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My work</title>
-  </head>
-  <body>
-  <h1>My summary</h1>
-  <ul>
-    <li>Positive</li>
-      <ul>
-        <li>Sweet</li>
-        <li>Fluffy</li>
-      </ul>
-    </li>
-    <li>Negative</li>
-      <ul>
-        <li>Lazy</li>
-        <li>Fragile</li>
-        <li>Bald</li>
-        <li>... etc.</li>
-      </ul>
-    </li>
-  </body>
-</html>
+```var d = new Date();
+var time = d.getHours();
+if (time &lt; 8)
+  {
+  document.write("<b>Wake up and sing!</b>");
+  }
 ```
 ---
 ## Experience
