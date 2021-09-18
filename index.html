@@ -14,7 +14,7 @@
 
   </head>
   <body>
-    <div>
+    <div class="wrapper">
       <!--Header-->
       <header>
         <h1>LEVACHKOV IGOR</h1>
@@ -94,15 +94,19 @@
             <p class="text">Pre-Intermediate (A2)</p>
           </section>
         </article>
-        <article class="code">
+        <article class="mycode">
           <h2 class="sticker">MY CODE</h2>
           <code>
-            var d = new Date();<br>
-            var time = d.getHours();<br>
-            if (time &lt; 8) <br>
-              &nbsp;&nbsp;{<br>
-              &nbsp;&nbsp;document.write("<b>Wake up and sing!</b>");<br>
-              &nbsp;&nbsp;}<br>
+            <pre class="code-box">
+    <span class="js-word">function</span> <span class="js-name">rgb</span>(<span class="js-name">r</span>, <span class="js-name">g</span>, <span class="js-name">b</span>) {
+      <span class="js-word">function</span> <span class="js-name">hex</span>(<span class="js-name">x</span>) {
+        <span class="js-word">if</span> (<span class="js-property">x</span> > <span class="js-name">255</span>) <span class="js-word">return</span> <span class="js-str">'FF'</span>;
+        <span class="js-word">else if</span> (<span class="js-property">x</span> < <span class="js-name">0</span>) <span class="js-word">return</span> <span class="js-str">'00'</span>;
+        <span class="js-word">else return</span> <span class="js-property">x</span>.<span class="js-property">toString</span>(<span class="js-name">16</span>).<span class="js-property">padStart</span>(<span class="js-name">2</span>, <span class="js-str">'0'</span>).<span class="js-property">toUpperCase</span>();
+      }
+      <span class="js-word">return</span> `${<span class="js-property">hex</span>(<span class="js-property">r</span>)}${<span class="js-property">hex</span>(<span class="js-property">g</span>)}${<span class="js-property">hex</span>(<span class="js-property">b</span>)}`
+    }
+            </pre>
           </code>
         </article>
       </main>

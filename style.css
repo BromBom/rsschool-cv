@@ -1,12 +1,15 @@
-/*style for centered block*/
-div {
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
     position: relative;
     width: 1200px;
     height: 1700px;
     margin: 0 auto;
     font-family: sans-serif;
     color: #000000;
-    background-color: #ffffff;
     border: 2px solid #000000;
     box-shadow: 28px 28px 12px rgba(0,0,0,0.25), 0 30px 30px rgba(0,0,0,0.22);
   }
@@ -100,11 +103,35 @@ footer {
     font-size: 18px;
 }
 
-.code {
-    margin-top: 150px;
-    margin-left: 80px;
-    padding-left: 8px;
-    border-left: 2px solid #000000;
+.mycode {
+    padding-left: 50px;
+    margin-top: 15px;
+}
+
+.code-box {
+    margin-top: 60px;
+    padding-top: 30px;
+    font-family: monospace;
+    font-size: 20px;
+    color: #ffffff;
+    
+    background-color: #000000;
+}
+
+.js-word {
+    color: #b45ea4;
+}
+
+.js-str {
+    color: #b5bd68;
+}
+
+.js-name {
+    color: #de935f;
+}
+
+.js-property {
+    color: #81a2be;
 }
 
 dt.year{

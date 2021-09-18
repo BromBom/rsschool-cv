@@ -23,13 +23,15 @@ At the moment, I want to become a good programmer, a professional in my field. I
    * Visual Studio Code
 ---
 ## My code
----
-```var d = new Date();
-var time = d.getHours();
-if (time &lt; 8)
-  {
-  document.write("<b>Wake up and sing!</b>");
+```
+function rgb(r, g, b) {
+  function hex(x) {
+    if (x > 255) return 'FF';
+    else if (x < 0) return '00';
+    else return x.toString(16).padStart(2, '0').toUpperCase();
   }
+  return `${hex(r)}${hex(g)}${hex(b)}`
+}
 ```
 ---
 ## Experience
