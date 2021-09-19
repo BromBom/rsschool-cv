@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    width: 100%;
+}
+
 .wrapper {
     position: relative;
     width: 1200px;
