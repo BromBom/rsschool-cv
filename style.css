@@ -87,6 +87,7 @@ footer {
 
 .head { 
     margin: 10px 40px;
+    padding-left: 10px;
     background: linear-gradient(to right, #ff6a00, #ffffff);
     border-bottom: 2px solid #000000;
 }
@@ -103,8 +104,52 @@ footer {
 }
 
 .projects {
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
     font-size: 18px;
+}
+
+.projects__item {
+    
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+}
+
+.projects__img {
+    max-width: 100%;
+    cursor: pointer;
+    opacity: 0.75;
+    border-radius: 25px 0 0 0;
+}
+
+.projects__content {
+    position: absolute;
+    padding-right: 15px;
+    max-width: 68%;
+    max-height:100%;
+    bottom: 0;
+    right: 0;
+    text-align: end;
+    background: rgba(247, 246, 246, 0.726);
+    z-index: 2;
+}
+
+a.link {
+    color: #000000;
+    font-size: 20px;
+}
+
+.projects__subtitle {
+    font-weight: 900;
+    color: #1900ff;
+}
+
+.projects__text {
+    padding-left: 15px;
+    text-align: start;
 }
 
 .mycode {
@@ -112,7 +157,7 @@ footer {
 }
 
 .code-box {
-    margin-top: 60px;
+    margin-top: 15px;
     margin-right: 30px;
     margin-left: 30px;
     padding-top: 30px;
@@ -175,6 +220,10 @@ a.git {
     .address dd {
         font-size: 18px;
     }
+
+    .projects__text {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -211,13 +260,34 @@ a.git {
     .code-box {
         font-size: 18px;
     }
+
+    .projects__title {
+        font-size: 16px;
+    }
+
+    .projects__text {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 500px) {
     .wrapper {
         max-width: 320px;
     }
+
     .code-box {
+        font-size: 11px;
+    }
+
+    .projects__title {
+        font-size: 11px;
+    }
+
+    .projects__subtitle {
+        font-size: 11px;
+    }
+
+    .projects__text {
         font-size: 11px;
     }
 }
