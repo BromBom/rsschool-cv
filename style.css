@@ -18,12 +18,66 @@ body {
     box-shadow: 28px 28px 12px rgba(0,0,0,0.25), 0 30px 30px rgba(0,0,0,0.22);
 }
 
-.container {
+
+
+.container-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header-menu {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+.header-menu:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 2;
+}
+
+.header-menu__body {
+    position: relative;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.header-menu__list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.header-menu__list li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.menu__link {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+}
 
 .box {
     display: flex;
@@ -202,11 +256,17 @@ a.git {
     color: #000000;
 }
 
+
+
+
 @media (max-width: 1300px) {
     .wrapper {
         max-width: 970px;
     }
 }
+
+
+
 
 @media (max-width: 1024px) {
     .wrapper {
@@ -225,6 +285,9 @@ a.git {
         font-size: 18px;
     }
 }
+
+
+
 
 @media (max-width: 767px) {
     .wrapper {
@@ -268,7 +331,68 @@ a.git {
     .projects__text {
         font-size: 16px;
     }
+
+    .header-menu__body {
+        height: 50px;
+    }
+
+    .header-menu__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+
+    .header-menu__burger span {
+        position: absolute;
+        background-color: #ffffff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+
+    .header-menu__burger::before,
+    .header-menu__burger::after {
+        content: '';
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+
+    .header-menu__burger::before {
+        top: 0;
+    }
+
+    .header-menu__burger::after {
+        bottom: 0;
+    }
+
+    .header-menu__menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ff6a00;
+        padding: 70px 0 0 0;
+
+    }
+
+    .header-menu__list {
+        display: block;
+    }
+
+    .header-menu__list li {
+        margin-bottom: 20px;
+    }
 }
+
+
+
 
 @media (max-width: 500px) {
     .wrapper {
