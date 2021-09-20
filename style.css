@@ -48,7 +48,7 @@ body {
 .header-menu__body {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 80px;
 }
@@ -76,7 +76,7 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .box {
@@ -351,6 +351,7 @@ a.git {
         width: 100%;
         height: 2px;
         top: 9px;
+        transition: all 0.4s ease 0s;
     }
 
     .header-menu__burger::before,
@@ -361,6 +362,7 @@ a.git {
         width: 100%;
         height: 2px;
         left: 0;
+        transition: all 0.4s ease 0s;
     }
 
     .header-menu__burger::before {
@@ -371,15 +373,34 @@ a.git {
         bottom: 0;
     }
 
+    .header-menu__burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header-menu__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+
+    }
+
+    .header-menu__burger.active span {
+        transform: scale(0)
+    }
+
     .header-menu__menu {
         position: fixed;
-        top: 0;
+        padding: 70px 0 0 0;
+        top: -110%;
         left: 0;
         width: 100%;
         height: 100%;
         background-color: #ff6a00;
-        padding: 70px 0 0 0;
+        transition: all 0.4s ease 0s;
+    }
 
+    .header-menu__menu.active {
+        top: 0;
     }
 
     .header-menu__list {
