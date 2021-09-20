@@ -15,5 +15,6 @@ function hideMenu() {
     menu.classList.remove('active');
 }
 
-console.log("")
+console.log("Не успел реализовать видеорезюме: -10 баллов.")
+console.log("Все оставшиеся пункты требований к CV выполнены")
 console.log("Самооценка ИТОГО: 150/160 баллов");
