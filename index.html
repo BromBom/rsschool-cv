@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Resume by Igor Levachkov">
     <meta name="keywords" content="Levachkov, resume, CV">
     <meta property="og:image" content="1.jpg">
@@ -14,98 +14,190 @@
 
   </head>
   <body>
-    <div>
-      <!--Header-->
-      <header>
-        <h1>LEVACHKOV IGOR</h1>
-        <h4>BEGINNING DEVELOPER</h4>
-      </header>
-      <!--Side bar-->
-      <aside>
-          <img src="https://sun9-60.userapi.com/impg/c858420/v858420746/1487e0/HTog9vWpij8.jpg?size=736x660&quality=96&sign=4192f384970ac7cad847e8f8aea2cf88&type=album" alt="foto" width="400">
-        <section class="address">
-          <h4 class="block">CONTAKTS</h4>
-          <address class="list">
-            <ul>
-              <li>&#9992; BELARUS, Minsk</li>
-              <li>&#9743; +375297721893</li>
-              <li>&#9993; <a class="mail" href="mailto:pokerlis@gmail.com">pokerlis@gmail.com</a></li>
-            </ul>
-          </address>
-        </section>
-        <section class="address">
-          <h4 class="block">EDUCATIONS</h4>
-          <dl>
-            <dt class="year">2004-2009</dt>
-              <dd>BSUIR</dd>
-              <dd> Faculty of Computer Design</dd>
-              <dd> design engineer</dd>
-            <dt class="year">2009-2014</dt>
-              <dd>BSUIR</dd>
-              <dd>Faculty of Distance Learning</dd>
-              <dd> engineer-economist</dd>
-            <dt class="year">2021</dt>
-              <dd>RS School</dd>
-              <dd> "JavaScript/Front-end"</dd>
-          </dl>
-        </section>
-      </aside>
-      <!--Main information-->
-      <main>
-        <article>
-          <h2 class="sticker">PROFILE</h2>
-          <section>
-            <h2 class="head">ABOUT ME</h2>
-            <p class="text">At the moment, I want to become a good programmer, a professional in my field.
-              I persistently study the basics of programming and strive to improve my skills and horizons.
-              I compensate for the lack of programming experience with perseverance and a technical mindset.</p>
-          </section>
-          <section>
-            <h2 class="head">SKILLS</h2>
-            <ul class="skills">
+    <div class="header-menu">
+      <div class="container-menu">
+        <div class="header-menu__body">
+          <div class="header-menu__burger">
+            <span></span>
+          </div>
+          <nav class="header-menu__menu">
+            <ul class="header-menu__list">
               <li>
-                <h3>Programming languages (basics)</h3>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JS</li>
-                </ul>
+                <a href="#contacts" class="menu__link">CONTAСTS</a>
               </li>
               <li>
-                <h3>Version control systems</h3>
-                <ul>
-                  <li>Git</li>
-                </ul>
+                <a href="#education" class="menu__link">EDUCATIONS</a>
               </li>
               <li>
-                <h3>Other programm</h3>
-                <ul>
-                  <li>Visual Studio Code</li>
-                </ul>
+                <a href="#about" class="menu__link">ABOUT ME</a>
+              </li>
+              <li>
+                <a href="#skills" class="menu__link">SKILLS</a>
+              </li>
+              <li>
+                <a href="#projects" class="menu__link">PROJECTS</a>
+              </li>
+              <li>
+                <a href="#english" class="menu__link">ENGLISH</a>
+              </li>
+              <li>
+                <a href="#code" class="menu__link">MY CODE</a>
               </li>
             </ul>
+  
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      
+      
+      <div class="container">
+        <!--Side bar-->
+        <aside>
+          <figure>
+            <img class="ava" src="https://sun9-60.userapi.com/impg/c858420/v858420746/1487e0/HTog9vWpij8.jpg?size=736x660&quality=96&sign=4192f384970ac7cad847e8f8aea2cf88&type=album" alt="my photo" width="400">
+          </figure>
+          <section class="address">
+            <h4 class="block"><span id="contacts"></span>CONTAСTS</h4>
+            <address class="list">
+              <ul>
+                <li>&#9992; BELARUS, Minsk</li>
+                <li>&#9743; +375297721893</li>
+                <li>&#9993; <a class="mail" href="mailto:pokerlis@gmail.com">pokerlis@gmail.com</a></li>
+              </ul>
+            </address>
           </section>
-          <section>
-            <h2 class="head">EXPERIENCE</h2>
-            <p class="text">Still empty</p>
+          <section class="address">
+            <h4 class="block"><span id="education"></span>EDUCATION</h4>
+            <dl>
+              <dt class="year">2004-2009</dt>
+                <dd>BSUIR</dd>
+                <dd> Faculty of Computer Design</dd>
+                <dd> design engineer</dd>
+              <dt class="year">2009-2014</dt>
+                <dd>BSUIR</dd>
+                <dd>Faculty of Distance Learning</dd>
+                <dd> engineer-economist</dd>
+              <dt class="year">2021</dt>
+                <dd>RS School</dd>
+                <dd> "JavaScript/Front-end"</dd>
+            </dl>
           </section>
-          <section>
-            <h2 class="head">ENGLISH</h2>
-            <p class="text">Pre-Intermediate (A2)</p>
-          </section>
-        </article>
-        <article class="code">
-          <h2 class="sticker">MY CODE</h2>
-          <code>
-            var d = new Date();<br>
-            var time = d.getHours();<br>
-            if (time &lt; 8) <br>
-              &nbsp;&nbsp;{<br>
-              &nbsp;&nbsp;document.write("<b>Wake up and sing!</b>");<br>
-              &nbsp;&nbsp;}<br>
-          </code>
-        </article>
-      </main>
+        </aside>
+        <div class="box">
+          <!--Header-->
+          <header>
+            <h1>LEVACHKOV IGOR</h1>
+            <h4>BEGINNING DEVELOPER</h4>
+          </header>
+          <!--Main information-->
+          <main>
+            <article>
+              <h2 class="sticker">PROFILE</h2>
+              <section>
+                <h2 class="head"><span id="about"></span>ABOUT ME</h2>
+                <p class="text">At the moment, I want to become a good programmer, a professional in my field.
+                  I persistently study the basics of programming and strive to improve my skills and horizons.
+                  I compensate for the lack of programming experience with perseverance and a technical mindset.</p>
+              </section>
+              <section>
+                <h2 class="head"><span id="skills"></span>SKILLS</h2>
+                <ul class="skills">
+                  <li>
+                    <h3>Programming languages (basics)</h3>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JS</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h3>Version control systems</h3>
+                    <ul>
+                      <li>Git</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h3>Other programm</h3>
+                    <ul>
+                      <li>Visual Studio Code</li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+              <section>
+                <h2 class="head"><span id="projects"></span>PROJECTS</h2>
+                <div class="projects">
+                  <article class="projects__item">
+                    <a class="link" href="https://rolling-scopes-school.github.io/brombom-JSFEPRESCHOOL/museum" target="_blank">
+                      <img class="projects__img" src="./img/museum.jpg" alt="Museum project home page">
+                      <div class="projects__content">
+                        <p class="projects__subtitle">HTML CSS Figma</p>
+                        <h3 class="projects__title">
+                          Guided tour of the Louvre
+                        </h3>
+                        <p class="projects__text">A platform for acquaintance with the outstanding exhibits of the most famous museum in the world.</p>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="projects__item">
+                    <a class="link" href="https://rolling-scopes-school.github.io/brombom-JSFEPRESCHOOL/js30" target="_blank">
+                      <img class="projects__img" src="./img/slider.jpg" alt="First slide of slider">
+                      <div class="projects__content">
+                        <p class="projects__subtitle">HTML CSS JS</p>
+                        <h3 class="projects__title">
+                          Vertical Slider
+                        </h3>
+                        <p class="projects__text">Advanced slider with infinite loop and control of buttons and scroll through DOM-events.</p>
+                      </div>
+                    </a>
+                  </article>
+
+                  <article class="projects__item">
+                    <a class="link" href="https://rolling-scopes-school.github.io/brombom-JSFEPRESCHOOL/whack-a-mole" target="_blank">
+                      <img class="projects__img" src="./img/game.jpg" alt="A screenshot of mini game Whack a Mole">
+                      <div class="projects__content">
+                        <p class="projects__subtitle">HTML CSS JS</p>
+                        <h3 class="projects__title">
+                          Whack a Mole
+                        </h3>
+                        <p class="projects__text">Mini-game with animation, sound effects, and saving usernames and records in localStorage.</p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </section>
+              <section>
+                <h2 class="head"><span id="english"></span>ENGLISH</h2>
+                <p class="text">Pre-Intermediate (A2)</p>
+              </section>
+            </article>
+            <article class="mycode">
+              <h2 class="sticker"><span id="code"></span>MY CODE</h2>
+              
+              <pre class="code-box">
+  <span class="js-word">function</span> <span class="js-name">rgb</span>(<span class="js-name">r</span>, <span class="js-name">g</span>, <span class="js-name">b</span>) {
+    <span class="js-word">function</span> <span class="js-name">hex</span>(<span class="js-name">x</span>) {
+      <span class="js-word">if</span> (<span class="js-property">x</span> > <span class="js-name">255</span>) <span class="js-word">return</span> <span class="js-str">'FF'</span>;
+      <span class="js-word">else if</span> (<span class="js-property">x</span> &lsaquo; <span class="js-name">0</span>) <span class="js-word">return</span> <span class="js-str">'00'</span>;
+      <span class="js-word">else return</span> <span class="js-property">x</span>
+                  .<span class="js-property">toString</span>(<span class="js-name">16</span>)
+                  .<span class="js-property">padStart</span>(<span class="js-name">2</span>, <span class="js-str">'0'</span>)
+                  .<span class="js-property">toUpperCase</span>();
+    }
+    <span class="js-word">return</span> `${<span class="js-property">hex</span>(<span class="js-property">r</span>)}${<span class="js-property">hex</span>(<span class="js-property">g</span>)}${<span class="js-property">hex</span>(<span class="js-property">b</span>)}`
+  }
+              </pre>
+              
+            </article>
+          </main>
+
+        </div>
+      
+      </div>
+      
       <!--Footer-->
       <footer>
         <section>
@@ -117,5 +209,6 @@
         <p>&copy; <time>2021</time> Levachkov Igor. <a class="git" href="https://github.com/BromBom">My GitHub</a></p>
       </footer>
   </div>
+  <script src = "app.js"></script>
   </body>
 </html>

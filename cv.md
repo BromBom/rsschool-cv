@@ -1,8 +1,8 @@
-![foto](https://sun9-60.userapi.com/impg/c858420/v858420746/1487e0/HTog9vWpij8.jpg?size=736x660&quality=96&sign=4192f384970ac7cad847e8f8aea2cf88&type=album)
+![my photo](https://sun9-60.userapi.com/impg/c858420/v858420746/1487e0/HTog9vWpij8.jpg?size=736x660&quality=96&sign=4192f384970ac7cad847e8f8aea2cf88&type=album)
 # Igor Levachkov 
 ---
 ---
-## Contacs
+## Contacts
 * Belarus, Mink
 * +375297721893
 * pokerlis@gmail.com
@@ -23,13 +23,15 @@ At the moment, I want to become a good programmer, a professional in my field. I
    * Visual Studio Code
 ---
 ## My code
----
-```var d = new Date();
-var time = d.getHours();
-if (time &lt; 8)
-  {
-  document.write("<b>Wake up and sing!</b>");
+```
+function rgb(r, g, b) {
+  function hex(x) {
+    if (x > 255) return 'FF';
+    else if (x < 0) return '00';
+    else return x.toString(16).padStart(2, '0').toUpperCase();
   }
+  return `${hex(r)}${hex(g)}${hex(b)}`
+}
 ```
 ---
 ## Experience
