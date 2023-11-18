@@ -44,7 +44,7 @@ function rgb(r, g, b) {
 }
 ```
 ## Experience
-#### _I have some experience in JS and Frontend development: <https://pma-svr-by.netlify.app/>_ 
+_I have some experience in JS and Frontend development: <https://pma-svr-by.netlify.app/>_ 
 ## Education
 * 2004-2009
   + BSUIR, Faculty of Computer Design, design engineer
